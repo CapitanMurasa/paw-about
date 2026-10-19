@@ -2,13 +2,83 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="shortcut icon" type="image/x-icon" href="public/icon65.png" />
+
         <title>Perfect Audio Works</title>
     </head>
     <body>
-        <h1>Perfect Audio Works</h1>
+        <div class="main">
+            <nav class="navbar">
+            <div class="nav-brand">Perfect Audio Works</div>
+            <ul class="nav-links">
+                <li><a href="https://github.com/CapitanMurasa/PerfectAudioWorks" target="_blank">GitHub repo</a></li>
+            </ul>
+            </nav>
+            <div class="aboutphoto">
+                    <figure>
+                    <img src="public/icon256.png" alt="PAW logo">
+                    <h1>PerfectAudioWorks</h1>
+                    </figure>
+            </div>
+            <div class="About">
 
-        this site is under construction...<br>
-        if you want to know about perfect audio works you can visit project's <a href="https://github.com/CapitanMurasa/PerfectAudioWorks">github page</a><br>
-        see ya later!
+                <h2>About this project</h2>
+                <p>Perfect Audio Works is an open source lightweight and cross platform audio player!
+                It uses C++, Qt Framework, PortAudio (with optional mpg123, sndfile and FFmpeg) and more stuff that doesn't need any introduction, but if you're curious you can look somewhere below,
+                i would write about every library that this program uses.</p>
+                <h3><em>Why did i create this program?</em></h3>
+                <div class="aboutphoto">
+                    <figure>
+                    <img src="public/v0.0.2.png" alt="early version of PAW v0.0.2">
+                    <figcaption>early version of PAW v0.0.2</figcaption>
+                    </figure>
+                </div>
+                <p>It's as simple as that. I just wanted to create a decent alternative to winamp, but also add some things that i'd like add from self,
+                e.g. Plugin support trough Python, native flac processing (because winamp at that time needed a separate plugin that was so hard to find across the internet) and linux support!
+                It all begun from a simple experiment with Portaudio and libsndfile to create a loopback that would feed raw PCM bytes from sndfile to portaudio, and i was so excited with that
+                experiment that it grew into what we have today by gradually integrating Qt framework, going trough treading and race condition hell and alot of memory leaks and segfaults (i'm not a good programmer y'know).</p>
+
+            </div>
+            <div class="screenshots">
+                <h1>screenshots</h1>
+                <div class="screenshots-container">
+                <div class="screenshot1">
+                    <figure>
+                    <img src="public/screenshot01.png" alt="screenshot01">
+                    <figcaption>PerfectAudioWorks v0.1.4 on Windows 11</figcaption>
+                    </figure>
+                </div>
+
+                <div class="screenshot02">
+                    <figure>
+                    <img src="public/screenshot02.png" alt="screenshot02">
+                    <figcaption>PerfectAudioWorks v0.1.4 on GNU/Linux KDE plasma</figcaption>
+                    </figure>
+                </div>
+                </div>
+            </div>
+            <div class="download">
+                <h2>Downloads</h2>
+                <h3>Windows releases</h3>
+                <form action="https://github.com/CapitanMurasa/PerfectAudioWorks/releases/download/V0.1.4/PerfectAudioWorks-0.1.4-win64.exe">
+                    <input type="submit" value="Download for Windows 10/11(.exe)">
+                </form>
+                <form action="https://github.com/CapitanMurasa/PerfectAudioWorks/releases/download/V0.1.4/PerfectAudioWorks-0.1.4-win64.zip">
+                    <input type="submit" value="Download Standalone for Windows 10/11(.zip)">
+                </form>
+                <h3>GNU/Linux releases</h3>
+                <form action="https://github.com/CapitanMurasa/PerfectAudioWorks/releases/download/V0.1.4/PerfectAudioWorks-0.1.4-Linux.deb">
+                    <input type="submit" value="Download for Debian/Ubuntu(.deb)">
+                </form>
+                <form action="https://github.com/CapitanMurasa/PerfectAudioWorks/releases/download/V0.1.4/PerfectAudioWorks-0.1.4-Linux.rpm">
+                    <input type="submit" value="Download for Fedora/RHEL(.rpm)">
+                </form>
+                <h2>Try this program! You won't regret</h2>
+                <h3><em>But consider that this program is still in beta, so expect plenty of bugs</em></h3>
+                <p>If you ever encounter one , please report it <a href="https://github.com/CapitanMurasa/PerfectAudioWorks/issues">here</a></p>
+
+            </div>
+        </div>
     </body>
 </html>
